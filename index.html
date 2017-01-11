@@ -11,19 +11,40 @@
   <body>
     <div class="container">
       <h1>Calculator</h1>
-      <form id="add">
-        <div class="form-group">
-          <label for="add1">1st number:</label>
-          <input id="add1" class="form-control" type="text">
+      <div class="row">
+        <div class="col-sm-3">
+          <form id="add">
+          <div class="form-group">
+            <label for="add1">1st number:</label>
+            <input id="add1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="add2">2nd number:</label>
+            <input id="add2" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Add!</button>
+          </form>
+          <div>
+            <p class="one">The sum is <span class="sum"></span>.</p>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="add2">2nd number:</label>
-          <input id="add2" class="form-control" type="text">
+        <div class="col-sm-3">
+          <form id="subtract">
+          <div class="form-group">
+            <label for="subtract1">1st number:</label>
+            <input id="subtract1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="subtract2">2nd number:</label>
+            <input id="subtract2" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Subtract!</button>
+          </form>
+          <div>
+            <p class="two">The difference is <span class="difference"></span>.</p>
+          </div>
         </div>
-        <button type="submit" class="btn">Add!</button>
-      </form>
-      <div>
-        <p>The sum is <span class="output"></span>.</p>
+
       </div>
     </div>
   </body>

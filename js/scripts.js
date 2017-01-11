@@ -21,8 +21,18 @@ $(document).ready(function() {
     var number1 = parseFloat($("#add1").val());
     var number2 = parseFloat($("#add2").val());
     var result = add(number1,number2);
-    $("p").show();
-    $(".output").text(result);
+    $("p.one").show();
+    $(".sum").text(result);
+  });
+  debugger
+  $("form#subtract").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseFloat($("#subtract1").val());
+    var number2 = parseFloat($("#subtract2").val());
+    var result = subtract(number1, number2);
+    $("p.two").show();
+    $(".difference").text(result);
+
   });
 
 });
